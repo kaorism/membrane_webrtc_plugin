@@ -38,7 +38,6 @@ defmodule Membrane.WebRTC.Plugin.Mixfile do
   defp deps do
     [
       {:membrane_core, "~> 1.1"},
-      {:ex_webrtc, "~> 0.4.0"},
       {:corsica, "~> 2.0"},
       {:membrane_rtp_plugin, "~> 0.30.0"},
       {:membrane_rtp_h264_plugin, "~> 0.20.1"},
@@ -56,7 +55,8 @@ defmodule Membrane.WebRTC.Plugin.Mixfile do
       {:membrane_opus_plugin, "~> 0.20.0", only: :test},
       {:ex_doc, ">= 0.0.0", only: :dev, runtime: false},
       {:dialyxir, ">= 0.0.0", only: :dev, runtime: false},
-      {:credo, ">= 0.0.0", only: :dev, runtime: false}
+      {:credo, ">= 0.0.0", only: :dev, runtime: false},
+      {:ex_webrtc, "~> 0.7.0"}
     ]
   end
 
